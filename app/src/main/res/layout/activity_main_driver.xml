@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/container_flayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu_llayout"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/menu_llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#F5F5F5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 首页 -->
+
+            <RadioButton
+                android:id="@+id/homepage_rb"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/selector_main_navi_icon_home"
+                android:text="首页"
+                android:textColor="@color/selector_color_main_navi_txt" />
+
+            <!-- 通讯录 -->
+
+            <RadioButton
+                android:id="@+id/addressbooks_rb"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/selector_main_navi_icon_addressbook"
+                android:text="通讯录"
+                android:textColor="@color/selector_color_main_navi_txt" />
+
+            <!-- 我的 -->
+
+            <RadioButton
+                android:id="@+id/me_rb"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/selector_main_navi_icon_me"
+                android:text="我的"
+                android:textColor="@color/selector_color_main_navi_txt" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

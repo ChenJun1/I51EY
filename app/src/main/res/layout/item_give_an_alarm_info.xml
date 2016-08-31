@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/CarCode_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:text="沪A123232"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_18" />
+
+        <TextView
+            android:id="@+id/Alarm_DateTime_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:text="2016-04-30 09:09:00" />
+
+        <TextView
+            android:id="@+id/Alarm_Description_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:text="沪A123232;在江苏省》苏州市》昆山市；" />
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/dimen_3"-->
+            <!--android:text="沪A123232;在江苏省》苏州市》昆山市；" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_over_time" />
+
+            <TextView
+                android:id="@+id/OverSpeedTime_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_3"
+                android:text="1分钟"
+                android:textColor="@color/color_ff0000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/Alarm_Type_Oid_iv"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dao" />
+    </LinearLayout>
+
+</LinearLayout>

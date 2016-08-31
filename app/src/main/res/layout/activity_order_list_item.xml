@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.5">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#f4f4f8"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/Operate_DateTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="05-07"
+                android:textSize="12sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="2">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/weiqianshou"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="85dp"
+                    android:background="@drawable/un_finish"
+                    android:gravity="center"
+                    android:text="未签收"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/zuofei"
+                    android:layout_width="75.75dp"
+                    android:layout_height="45.5dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/to_void"
+                    android:textColor="#ffffff"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:orientation="horizontal"
+                                android:paddingTop="@dimen/dimen_10">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/accounts_payable_list_order_num"
+                                    android:textColor="@color/color_000000"
+                                    android:textSize="@dimen/font_15" />
+
+                                <TextView
+                                    android:id="@+id/Ticket_No_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="@dimen/dimen_5"
+                                    android:text="--"
+                                    android:textColor="#ff000000"
+                                    android:textSize="@dimen/font_15" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/shape_rounded_tv_f5bb4e_3"
+                                    android:paddingLeft="@dimen/dimen_2"
+                                    android:paddingRight="@dimen/dimen_2"
+                                    android:text="收"
+                                    android:textColor="@color/color_ffffff"
+                                    android:textSize="@dimen/font_13" />
+
+                                <TextView
+                                    android:id="@+id/SendStation_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="--"
+                                    android:textSize="15sp" />
+
+                                <LinearLayout
+                                    android:id="@+id/qianshou_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center_horizontal|bottom"
+                                    android:layout_marginLeft="20dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/shape_rounded_tv_8dc15a_3"
+                                        android:gravity="center"
+                                        android:paddingLeft="@dimen/dimen_2"
+                                        android:paddingRight="@dimen/dimen_2"
+                                        android:text="签"
+                                        android:textColor="@color/color_ffffff"
+                                        android:textSize="@dimen/font_13" />
+
+                                    <TextView
+                                        android:id="@+id/ArrStation_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="5dp"
+                                        android:gravity="center_vertical"
+                                        android:text="---"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/statistic_order_list_income"
+                            android:textSize="@dimen/font_15" />
+
+                        <TextView
+                            android:id="@+id/Ticket_Fee_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dimen_5"
+                            android:text="--"
+                            android:textColor="@color/color_fb9213"
+                            android:textSize="@dimen/font_18" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#f4f4f8"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/titlelayout"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#F5F5F5"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- 首页 -->
+
+            <RadioButton
+                android:id="@+id/homepage_rb"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/selector_main_navi_icon_home"
+                android:text="@string/employee_home_name"
+                android:textColor="@color/selector_color_main_navi_txt" />
+
+            <!-- 通讯录 -->
+
+            <RadioButton
+                android:id="@+id/addressbook_rb"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/selector_main_navi_icon_addressbook"
+                android:text="@string/employee_addressbook_name"
+                android:textColor="@color/selector_color_main_navi_txt" />
+
+            <!-- 我的 -->
+            <RadioButton
+                android:id="@+id/me_rb"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/selector_main_navi_icon_me"
+                android:text="@string/employee_me_name"
+                android:textColor="@color/selector_color_main_navi_txt" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>
